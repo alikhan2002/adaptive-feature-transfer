@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------
+model_class: vit_small_patch16_224.augreg_in1k
+train_frac: 1
+use_val: False
+method: kd
+steps: 5000
+eval_steps: 500
+prec: 10
+pretrained_models: vit_base_patch14_dinov2.lvd142m
+init_model: vit_small_patch16_224.augreg_in1k
+optimizer: adam
+lr: 0.0001
+wd: 0
+learn_scales: True
+prior_lr: 0.01
+prior_freq: 1
+prior_pretrain_steps: 0
+ckpt_dir: None
+seed: 2
+use_wandb: False
+run_name: None
+no_augment: True
+cache: False
+batch_size: 128
+dataset: cifar100
+kwargs: {}
+--------------------------------------------------------------------------------
+Train transform:
+Compose(
+    Resize(size=248, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(224, 224))
+    MaybeToTensor()
+    Normalize(mean=tensor([0.5000, 0.5000, 0.5000]), std=tensor([0.5000, 0.5000, 0.5000]))
+)
+Test transform:
+Compose(
+    Resize(size=248, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(224, 224))
+    MaybeToTensor()
+    Normalize(mean=tensor([0.5000, 0.5000, 0.5000]), std=tensor([0.5000, 0.5000, 0.5000]))
+)
+Files already downloaded and verified
+Files already downloaded and verified
+Training set size: 50000
+Validation set size: 0
+Train transform:
+Compose(
+    Resize(size=248, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(224, 224))
+    MaybeToTensor()
+    Normalize(mean=tensor([0.5000, 0.5000, 0.5000]), std=tensor([0.5000, 0.5000, 0.5000]))
+)
+Test transform:
+Compose(
+    Resize(size=248, interpolation=bicubic, max_size=None, antialias=warn)
+    CenterCrop(size=(224, 224))
+    MaybeToTensor()
+    Normalize(mean=tensor([0.5000, 0.5000, 0.5000]), std=tensor([0.5000, 0.5000, 0.5000]))
+)
+Files already downloaded and verified
+Files already downloaded and verified
+Pretrained models: ['vit_base_patch14_dinov2.lvd142m']
+Feature dims: [768]
+Feature dataset: torch.Size([50000, 768])
+Feature dims: [768]
+Feature dataset: torch.Size([0, 768])
+Feature dims: [768]
+Feature dataset: torch.Size([10000, 768])
+Init model: vit_small_patch16_224.augreg_in1k
+Using timm pretrained model
+KD: params / constraints = 0.0077
+Trainable parameters: 22M
+Optimizer: adam
+Not loading: ['classifier.weight', 'classifier.bias']
+Finished training, evaluating...
+Final test acc: 85.740
