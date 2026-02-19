@@ -1,0 +1,60 @@
+Trainable parameters: 67M
+Optimizer: adam
+Not loading: ['classifier.weight', 'classifier.bias']
+  0%|                                                                                                                                                           | 0/34 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/run.py", line 114, in main
+    train(loaders, model, init_model, prior, wandb_run, hypers)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 183, in train
+    train_model(model, loaders, prior=prior, pretrained_init=init_model, wandb_run=wandb_run, **hypers)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 148, in train_model
+    metrics = train_epoch([batch], model, criterion, prior, optimizer, stop_prior_grad, freeze_model)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 39, in train_epoch
+    outputs, feats = model(inputs, return_feat=True)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/models.py", line 191, in forward
+    feat = self.model(**x).logits
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 841, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 588, in forward
+    distilbert_output = self.distilbert(
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 915, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 253, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 421, in forward
+    return self.transformer(
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 280, in forward
+    hidden_states = layer_module(
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 252, in forward
+    attention_output, _ = self.attention(
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/al_zhamankhan/.conda/envs/aft_clean/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 195, in forward
+    attn_output, attn_weights = attention_interface(
+  File "/home/al_zhamankhan/.local/lib/python3.10/site-packages/transformers/integrations/sdpa_attention.py", line 92, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 102.00 MiB. GPU 0 has a total capacity of 39.38 GiB of which 7.12 MiB is free. Process 3751654 has 24.87 GiB memory in use. Including non-PyTorch memory, this process has 1.81 GiB memory in use. Process 3751820 has 1012.00 MiB memory in use. Process 3751822 has 414.00 MiB memory in use. Process 3751821 has 11.27 GiB memory in use. Of the allocated memory 1.25 GiB is allocated by PyTorch, and 73.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

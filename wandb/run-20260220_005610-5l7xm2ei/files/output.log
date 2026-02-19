@@ -1,0 +1,5 @@
+Trainable parameters: 29M
+Optimizer: adam
+Train acc: 90.7, Test acc: 69.2: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [24:08<00:00, 42.59s/it]
+Finished training, evaluating...
+Final test acc: 68.440

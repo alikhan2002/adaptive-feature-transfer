@@ -1,0 +1,131 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        code_path: code/run.py
+        e:
+            xj5hqb2j13rbptpss6vn5jc5l16wlddy:
+                args:
+                    - ./hf_models/bert_small
+                    - imdb
+                    - "1"
+                    - "False"
+                    - init
+                    - "2500"
+                    - --batch_size=128
+                    - --lr=2e-5
+                    - --eval_steps=1000
+                    - --cache=True
+                    - --no_augment=True
+                    - --use_wandb=True
+                    - --run_name=init_bert-small_imdb
+                codePath: run.py
+                codePathLocal: run.py
+                cpu_count: 40
+                cpu_count_logical: 40
+                cudaVersion: "12.4"
+                disk:
+                    /:
+                        total: "2161232625664"
+                        used: "1875321085952"
+                email: al_zhamankhan@kbtu.kz
+                executable: /home/al_zhamankhan/.conda/envs/aft_clean/bin/python
+                git:
+                    commit: f07a9e25366a33d19190c86633d7ea20a6b8bcd9
+                    remote: https://github.com/menghor-thuo/adaptive-feature-transfer
+                gpu: NVIDIA A100-PCIE-40GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "42949672960"
+                      name: NVIDIA A100-PCIE-40GB
+                      uuid: GPU-14df5160-adca-f367-521b-7ba7a41f5837
+                host: vm-tesla
+                memory:
+                    total: "265948102656"
+                os: Linux-6.5.0-1017-gcp-x86_64-with-glibc2.35
+                program: /home/al_zhamankhan/text_mining/adaptive-feature-transfer/run.py
+                python: CPython 3.10.19
+                root: /home/al_zhamankhan/text_mining/adaptive-feature-transfer
+                startedAt: "2026-02-19T15:37:07.313797Z"
+                writerId: xj5hqb2j13rbptpss6vn5jc5l16wlddy
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 63
+                - 71
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 63
+                - 71
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.19
+            "5": 0.25.0
+            "6": 5.2.0
+            "12": 0.25.0
+            "13": linux-x86_64
+batch_size:
+    value: 128
+cache:
+    value: true
+ckpt_dir:
+    value: null
+dataset:
+    value: imdb
+eval_steps:
+    value: 1000
+init_model:
+    value: null
+learn_scales:
+    value: false
+lr:
+    value: 2e-05
+method:
+    value: init
+model_class:
+    value: ./hf_models/bert_small
+no_augment:
+    value: true
+optimizer:
+    value: sgd
+prec:
+    value: 0
+pretrained_models:
+    value: null
+prior_freq:
+    value: 1
+prior_lr:
+    value: 0.01
+prior_pretrain_steps:
+    value: 0
+run_name:
+    value: init_bert-small_imdb
+seed:
+    value: 0
+steps:
+    value: 2500
+train_frac:
+    value: 1
+use_val:
+    value: false
+use_wandb:
+    value: true
+wd:
+    value: 0

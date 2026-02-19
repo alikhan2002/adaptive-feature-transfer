@@ -1,0 +1,5 @@
+Trainable parameters: 67M
+Optimizer: sgd
+Train acc: 62.4, Test acc: 62.1: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 17/17 [20:05<00:00, 70.89s/it]
+Finished training, evaluating...
+Final test acc: 62.171

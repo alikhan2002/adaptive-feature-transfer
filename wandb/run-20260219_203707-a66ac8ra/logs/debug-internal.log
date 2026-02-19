@@ -1,0 +1,11 @@
+{"time":"2026-02-19T20:37:07.534244306+05:00","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-19T20:37:08.345821647+05:00","level":"INFO","msg":"stream: created new stream","id":"a66ac8ra"}
+{"time":"2026-02-19T20:37:08.345885232+05:00","level":"INFO","msg":"handler: started","stream_id":"a66ac8ra"}
+{"time":"2026-02-19T20:37:08.345926472+05:00","level":"INFO","msg":"stream: started","id":"a66ac8ra"}
+{"time":"2026-02-19T20:37:08.345986803+05:00","level":"INFO","msg":"writer: started","stream_id":"a66ac8ra"}
+{"time":"2026-02-19T20:37:08.345991287+05:00","level":"INFO","msg":"sender: started","stream_id":"a66ac8ra"}
+{"time":"2026-02-19T20:37:08.891101161+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T20:37:08.896283951+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T20:48:07.311750598+05:00","level":"INFO","msg":"stream: closing","id":"a66ac8ra"}
+{"time":"2026-02-19T20:48:07.830655671+05:00","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-19T20:48:07.831123172+05:00","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}

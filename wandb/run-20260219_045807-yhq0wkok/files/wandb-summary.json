@@ -1,0 +1,1 @@
+{"scales_mean":0.5,"test_ent":0.5238230370600289,"steps":4210,"epoch":1,"scales_std":0,"prior_loss":2.667776801586151,"_runtime":150,"dk":0.26677768024802206,"train_ce":0.3996462442278862,"_step":4,"test_acc":83.71559633027523,"_timestamp":1.7714592396241384e+09,"test_ce":0.4007561816534865,"_wandb":{"runtime":150},"train_acc":85.959375}

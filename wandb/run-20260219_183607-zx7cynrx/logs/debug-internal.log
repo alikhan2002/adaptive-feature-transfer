@@ -1,0 +1,11 @@
+{"time":"2026-02-19T18:36:07.867118712+05:00","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-19T18:36:08.456770435+05:00","level":"INFO","msg":"stream: created new stream","id":"zx7cynrx"}
+{"time":"2026-02-19T18:36:08.456956283+05:00","level":"INFO","msg":"stream: started","id":"zx7cynrx"}
+{"time":"2026-02-19T18:36:08.456994986+05:00","level":"INFO","msg":"handler: started","stream_id":"zx7cynrx"}
+{"time":"2026-02-19T18:36:08.456995241+05:00","level":"INFO","msg":"sender: started","stream_id":"zx7cynrx"}
+{"time":"2026-02-19T18:36:08.457033126+05:00","level":"INFO","msg":"writer: started","stream_id":"zx7cynrx"}
+{"time":"2026-02-19T18:36:08.938417913+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T18:36:08.943686687+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T18:45:10.11261138+05:00","level":"INFO","msg":"stream: closing","id":"zx7cynrx"}
+{"time":"2026-02-19T18:45:10.294987035+05:00","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-19T18:45:10.295359726+05:00","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}

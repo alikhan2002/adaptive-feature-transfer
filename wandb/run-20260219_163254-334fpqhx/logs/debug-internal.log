@@ -1,0 +1,12 @@
+{"time":"2026-02-19T16:32:54.982177193+05:00","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-19T16:32:55.556234155+05:00","level":"INFO","msg":"stream: created new stream","id":"334fpqhx"}
+{"time":"2026-02-19T16:32:55.556293822+05:00","level":"INFO","msg":"handler: started","stream_id":"334fpqhx"}
+{"time":"2026-02-19T16:32:55.556368539+05:00","level":"INFO","msg":"stream: started","id":"334fpqhx"}
+{"time":"2026-02-19T16:32:55.556392239+05:00","level":"INFO","msg":"sender: started","stream_id":"334fpqhx"}
+{"time":"2026-02-19T16:32:55.556395085+05:00","level":"INFO","msg":"writer: started","stream_id":"334fpqhx"}
+{"time":"2026-02-19T16:32:55.98306243+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T16:32:55.987816033+05:00","level":"ERROR","msg":"error generating diff","error":"no diff found"}
+{"time":"2026-02-19T16:40:04.08795841+05:00","level":"INFO","msg":"stream: closing","id":"334fpqhx"}
+{"time":"2026-02-19T16:40:04.088036563+05:00","level":"ERROR","msg":"sender: sendSummary called after exit"}
+{"time":"2026-02-19T16:40:04.088399862+05:00","level":"WARN","msg":"sender: received Exit record more than once, ignoring"}
+{"time":"2026-02-19T16:40:05.320460505+05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -1,0 +1,13 @@
+Trainable parameters: 67M
+Optimizer: sgd
+  0%|                                                                                                                                      | 0/6 [03:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/run.py", line 114, in main
+    train(loaders, model, init_model, prior, wandb_run, hypers)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 183, in train
+    train_model(model, loaders, prior=prior, pretrained_init=init_model, wandb_run=wandb_run, **hypers)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 148, in train_model
+    metrics = train_epoch([batch], model, criterion, prior, optimizer, stop_prior_grad, freeze_model)
+  File "/home/al_zhamankhan/text_mining/adaptive-feature-transfer/train.py", line 62, in train_epoch
+    correct_predictions += (predicted == targets).sum().item()
+KeyboardInterrupt
